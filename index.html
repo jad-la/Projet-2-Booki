@@ -30,6 +30,9 @@
     <!*************************Main******************************>
 
     <main>
+
+        <!************partie recherche**********>
+
         <div class="group-recherche" >
             <div>
                 <h1 class="titre">
@@ -38,15 +41,120 @@
                 <p class="first" >En plein centre-ville ou en pleine nature</p>
             </div>
 
-            <form action=""></form>
+            <form action="" method="post" class="boite-recherche" >
+                <div class="icone-location"><i class="fa-solid fa-location-dot"></i></div>
 
-            <div></div>
+                <input type="search" class="saisie-recherche" name="recherche-ville" placeholder="Marseille, France">
 
-            <p></p>
+                <button class="recherche">Rechercher</button>
+            </form>
 
+
+        <!**************Partie filtre************>    
+
+            <div class="block-filtre">
+                <p class="filtre">Filtres</p>
+                <div class="block-option" >
+                    <div class="options option-1"><i class="fa-solid fa-money-bill-wave"></i>Économique</div>
+                    <div class="options option-2"><i class="fa-solid fa-person"></i>Familial</div>
+                    <div class="options option-3"><i class="fa-solid fa-heart"></i>Romantique</div>
+                    <div class="options option-4"><i class="fa-solid fa-dog"></i>Animaux autorisés</div>
+                </div>  
+            </div>
+
+            <div class="infobar">
+                <div class="icone-info" ><i class="fa-solid fa-info"></i></div>
+                <p class="text-info" >Plus de 500 logements sont disponibles dans cette ville</p> 
+            </div>
+  
         </div>
 
-        <div class="hebergement" ></div>
+
+        <!*************Partie hébergement***********>
+
+        <section class="hebergement">
+            <div class="heber-ville" >
+                <h2 class="titre">Hébergements à Marseille</h2>
+
+                <div class="produit" >
+                    <article class="card" > 
+                        <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=""> 
+                        <h3>Auberge La Canebière</h3> 
+                        <p>Nuit à partir de 25€</p> 
+                        <div class="etoiles">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+
+                    <article> 
+                        <img src="" alt=""> 
+                        <h3>Auberge La Canebière</h3> 
+                        <p>Nuit à partir de 25€</p> 
+                        <div class="etoiles">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+
+                    <article> 
+                        <img src="" alt=""> 
+                        <h3>Auberge La Canebière</h3> 
+                        <p>Nuit à partir de 25€</p> 
+                        <div class="etoiles">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+
+                    <article> 
+                        <img src="" alt=""> 
+                        <h3>Auberge La Canebière</h3> 
+                        <p>Nuit à partir de 25€</p> 
+                        <div class="etoiles">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+
+                    <article> 
+                        <img src="" alt=""> 
+                        <h3>Auberge La Canebière</h3> 
+                        <p>Nuit à partir de 25€</p> 
+                        <div class="etoiles">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+
+                    <article> 
+                        <img src="" alt=""> 
+                        <h3>Auberge La Canebière</h3> 
+                        <p>Nuit à partir de 25€</p> 
+                        <div class="etoiles">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </article>
+                </div>
+
+                <button class="plus"></button>
+            </div>   
+            <div class="populaire" ></div>
+
+        </section>
 
         <div class="activite" ></div>
     </main>

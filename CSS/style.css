@@ -7,6 +7,7 @@ body{
 *{
     padding: 0;
     margin: 0;
+    font-family:'Raleway', sans-serif;
 }
 
 /*****************************header***************************/
@@ -58,6 +59,7 @@ header{
 
 /*****************************Main*****************************/
 
+/*******partie recherche**********/
 .titre{
     margin-top: 53px;
     font-weight: 700;
@@ -67,6 +69,162 @@ header{
     font-size: 16px;
     font-weight: 400;
     margin-top: 8px;
+}
+
+.boite-recherche{
+    width: 418px;
+    height: 49px; 
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+}
+.icone-location{
+    width: 50px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    text-align: center;
+}
+.fa-location-dot{
+    font-size: 18px;
+    margin-top: 16px;
+}
+.saisie-recherche{
+    border: none;
+    width: 230px;
+    padding-left: 10px;
+}
+input::placeholder {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+.recherche{
+    border: none;
+    width: 132px;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: #0065FC;
+}
+
+/*********Partie filtre*************/
+
+.block-filtre{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    width: 920px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.filtre{
+    padding-top: 14px;
+}
+
+
+.block-option{
+    width: 840px;
+    display: flex;
+    justify-content: space-between ;
+    cursor: pointer
+}
+
+.options{
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 14px;
+}
+.options .fa-solid{
+    margin-right: 10px;
+    color: #0065FC;
+    font-size: 22px;
+}
+.option-1{
+    width:175px;
+}
+
+.option-2{
+    width:136px;
+}
+.option-3{
+    width:172px;
+}
+.option-4{
+    width: 226px;
+}
+
+.infobar{
+    display: flex;
+    margin-top: 35px;
+}
+.icone-info{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #D9D9D9;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 12px;
+}
+.fa-info{
+    color: #0065FC;
+    font-size: 12px;
+}
+.text-info{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+/********hover*******/
+.options:hover{
+    background-color: #DEEBFF;
+}
+
+/****************Partie hébergement***********/
+
+.hebergement{
+
+}
+
+.heber-ville{
+    width: 70%;
+    border-radius: 20px;
+    background: #F2F2F2;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+.produit{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 25%;
+    border-radius: 15px;
+    background-color: white;
+    
+}
+.card img{
+    width: 240px;
+    height: 120px;
+}
+.card h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+.card p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.fa-star{
+    color: #0065FC;
 }
 
 /***************************footer*****************************/
