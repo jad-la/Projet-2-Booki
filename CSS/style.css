@@ -188,43 +188,177 @@ input::placeholder {
 /****************Partie hébergement***********/
 
 .hebergement{
-
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .heber-ville{
-    width: 70%;
+    width: 60%;
     border-radius: 20px;
     background: #F2F2F2;
-    padding-left: 40px;
-    padding-right: 40px;
-    
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top:2px ;  
 }
-.produit{
-    width: 90%;
+.titre-2{
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 40px;
+} 
+.produits-heber{
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .card{
-    width: 25%;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: white;
-    
-}
-.card img{
-    width: 240px;
-    height: 120px;
-}
-.card h3{
-    font-size: 16px;
-    font-weight: 700;
-}
-.card p{
-    font-size: 14px;
-    font-weight: 400;
-}
-.fa-star{
-    color: #0065FC;
+    box-shadow: 0px 11px 13px 0px rgb(0 0 0 / 13%);
+    padding: 5px;
 }
 
+.titre-3{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.card-p{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.card-heber{
+    width: 30%;
+    height: 199px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.card-heber img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.etoiles{
+    position: absolute;
+    bottom: 5px;
+    margin-left: 5px;
+}
+.fa-star{
+    font-size: 12px;
+    color: #0065FC;
+}
+.etoile-gris{
+    color: #F2F2F2;
+}
+.plus{
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.populaire{
+    width: 25%;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 2px;
+    border-radius: 20px;
+    background: #F2F2F2;
+}
+
+.fa-chart-line{
+    float: right;
+    color: #0065FC;
+}
+.card-pop{
+    width: 100%;
+    height: 145px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.card-pop img{
+    width: 40%;
+    height: 130px;
+    object-fit: cover;
+    height: 140px;
+    border-radius: 15px 0 0 15px;
+}
+.info-card{
+    margin-left: 15px;
+    padding-right: 5px;
+    position: relative;
+}
+
+/****************Partie activité**************/
+.activite{
+    margin-top: 60px;
+}
+.produits-activite{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+.card-activite{
+    width: 22%;
+    height: 444px;
+    border-radius: 20px;
+    box-shadow: 0px 11px 13px 0px rgb(0 0 0 / 13%);
+}
+
+.card-activite img{
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+figcaption{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+
 /***************************footer*****************************/
+.footer{
+    margin-top: 60px;
+    background-color: #F2F2F2;
+    padding: 45px 100px 0 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.titres-footer{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.listes-footer{
+    margin-top: 15px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.listes-footer li{
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    list-style-type: none;
+}
+.lien-list{
+    text-decoration: none;
+    color: black;
+}
