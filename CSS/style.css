@@ -1,5 +1,5 @@
 body{
-    max-width: 1 400 px;
+    max-width: 1400px;
     font-family:'Raleway', sans-serif;
     padding-left: 50px;
     padding-right: 50px;
@@ -75,7 +75,7 @@ header{
 }
 
 .boite-recherche{
-    width: 35%;
+    width: 440px;
     height: 49px; 
     margin-top: 20px;
     display: flex;
@@ -105,7 +105,7 @@ input::placeholder {
 }
 .recherche{
     border: none;
-    width: 30%;
+    width: 35%;
     border-radius: 0px 15px 15px 0px;
     font-size: 18px;
     font-weight: 700;
@@ -148,7 +148,7 @@ input::placeholder {
     margin-right: 30px;
     padding: 12px 14px;
 }
-.options .fa-solid{
+.options .fa-solid {
     margin-right: 10px;
     color: #0065FC;
     font-size: 18px;
@@ -157,11 +157,9 @@ input::placeholder {
     text-align: center;
     font-size: 17px;
     font-weight: 700;
+    margin-left: 5px;
     color: black;
 }
-
-
-
 
 .infobar{
     display: flex;
@@ -200,11 +198,11 @@ input::placeholder {
 }
 
 .heber-ville{
-    width: 58%;
+    width: 60%;
     border-radius: 20px;
     background: #F2F2F2;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top:2px ;  
 }
 .titre-2{
@@ -220,6 +218,12 @@ input::placeholder {
     margin-top: 20px;
 }
 
+.produits-heber a{
+    width: 32%;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: black;
+}
 .card{
     border-radius: 20px;
     background-color: white;
@@ -240,12 +244,6 @@ input::placeholder {
     font-size: 14px;
     font-weight: 400;
     margin-left: 5px;
-}
-.produits-heber a{
-    width: 30%;
-    margin-bottom: 30px;
-    text-decoration: none;
-    color: black;
 }
 .card-heber{
     height: 200px;
@@ -278,7 +276,7 @@ input::placeholder {
 }
 
 .populaire{
-    width: 25%;
+    width: 22%;
     padding: 2px 38px;
     border-radius: 20px;
     background: #F2F2F2;
@@ -324,7 +322,7 @@ input::placeholder {
     margin-top: 18px;
 }
 .produits-activite a{
-    width: 22%;
+    width: 23%;
     text-decoration: none;
     color: black;
 }
@@ -344,20 +342,25 @@ input::placeholder {
 figcaption{
     font-size: 16px;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 15px;
 }
 
 
 /***************************footer*****************************/
 .footer{
+    width: 100%;
     margin-top: 60px;
+    padding-left: 45px;
+    padding-top: 35px;
     background-color: #F2F2F2;
-    padding: 45px 100px 0 35px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
+.menu-footer{
+    width: 30%;
+}
 
 .titres-footer{
     font-size: 18px;
@@ -390,20 +393,19 @@ figcaption{
         @media screen and (max-width: 992px) {
 
             /*******partie recherche**********/
-            .boite-recherche{
-                width:60%;
-            }
+
             .fa-magnifying-glass{
                 display: none;
             }
 
             /*******partie filtre************/
             .block-option{
+                width: 100%;
                 justify-content: space-between;
 
             }
             .filtre{
-               margin-right: 15px;
+               margin-right: 10px;
             }
 
             /*********Partie hébergement*****/
@@ -422,7 +424,17 @@ figcaption{
             .hotel-pop a{
                 width: 30%;
             }
-            
+
+            /********partie activité*********/
+            .card-activite{
+                height: 270px;
+            }
+            .card-activite img{
+                height: 210px;
+            }
+            figcaption{
+                margin-top: 10px;
+            }
         }
 
 
@@ -456,29 +468,44 @@ figcaption{
             }
 
              /*******partie recherche**********/
+             .group-recherche{
+                width: 85%;
+                margin: auto;
+             }
              .boite-recherche{
-                width:85%;
-                margin: 20px auto;
+                width:95%;
             }
             .fa-magnifying-glass{
                 display: block;
+            }
+            .recherche{
+                width: 18%;
             }
             .recherche span{
                 display: none;
             }
 
             /*******partie filtre************/
+            .filtre{
+                margin-top: 0;
+            }
             .block-option{
                 margin-top:15px;
                 width: 100%;
             }
-            .filtre{
-                margin-top: 0;
-            }
             .options{
                 width: 35%;
                 margin-bottom: 15px;
+                margin-right: 10px;
             }
+            .options .fa-solid{
+                margin-right: 0;
+                font-size: 12px;
+            }
+            .options span{
+                font-size: 11px;
+            }
+
 
             /*******partie hébergement*******/
             .populaire{
@@ -488,6 +515,7 @@ figcaption{
             .heber-ville{
                 width: 100%;
                 order: 2;
+                background: white;
             }
             .hotel-pop{
                 display: flex;
@@ -502,6 +530,45 @@ figcaption{
             }
             .produits-heber a{
                 width: 100%;
+            }
+            /********partie activité**********/
+            .activite{
+              width: 85%;
+              margin: auto;
+            }
+            .activite h2{
+                width: 50%;
+            }
+            .produits-activite{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 900px;
+            }
+            .produits-activite a{
+                width: 100%;
+            }
+            .card-activite{
+                height: 200px;
+            }
+            .card-activite img{
+                height: 140px;
+            }
+
+            /**********footer***********/
+            .footer{
+                height: 430px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 0;
+            }
+            .menu-footer{
+                width: 100%;
+                margin: 30px;
+            }
+            .listes-footer{
+                margin-bottom: 0;
             }
             
         }
