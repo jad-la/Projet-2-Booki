@@ -1,13 +1,14 @@
-body{
-    max-width: 1400px;
-    font-family:'Raleway', sans-serif;
-    padding-left: 50px;
-    padding-right: 50px;
-}
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family:'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1400px;
+    padding: 0 50px;
+    margin: 0 auto;
 }
 
 /*****************************header***************************/
@@ -25,18 +26,14 @@ header{
     max-width: 100%;
     max-height: 100%;
 }
-.nav{
-    width: 25%;
-}
+
 .menu{  
-    width: 100%;
     display: flex;
     justify-content:space-around;   
 }
 .liste-menu{
-    width: 50%;
     list-style-type: none;
-    padding: 40px 20px 0 20px;
+    padding: 40px;
 }
 .liste-menu a{
     text-decoration: none;
@@ -62,6 +59,7 @@ header{
 
 /*****************************Main*****************************/
 
+
 /*******partie recherche**********/
 .titre{
     margin-top: 53px;
@@ -75,7 +73,7 @@ header{
 }
 
 .boite-recherche{
-    width: 440px;
+    max-width: 440px;
     height: 49px; 
     margin-top: 20px;
     display: flex;
@@ -114,6 +112,7 @@ input::placeholder {
 }
 .fa-magnifying-glass{
     display: none;
+    visibility: hidden;
 }
 
 /*********Partie filtre*************/
@@ -129,13 +128,11 @@ input::placeholder {
 .filtre{
     font-size: 18px;
     font-weight: 700;
-    margin-top: 12px;
-    margin-right: 25px;
+    margin: 12px 20px 8px 0;
 }
 
 
 .block-option{
-    width: 90%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -163,7 +160,7 @@ input::placeholder {
 
 .infobar{
     display: flex;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 .icone-info{
     width: 25px;
@@ -198,7 +195,7 @@ input::placeholder {
 }
 
 .heber-ville{
-    width: 60%;
+    width: 62%;
     border-radius: 20px;
     background: #F2F2F2;
     padding-left: 30px;
@@ -220,46 +217,58 @@ input::placeholder {
 
 .produits-heber a{
     width: 32%;
+    max-height: 225px;
     margin-bottom: 30px;
     text-decoration: none;
     color: black;
 }
 .card{
+    height: 100%;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 11px 13px 0px rgb(0 0 0 / 13%);
     padding: 5px;
+}
+.card-heber{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-heber img{
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 8px;
+    margin-top: 5px;
+    
 }
 
 .titre-3{
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
-    margin-top: 10px;
-    margin-left: 5px;
 }
 
 .card-p{
-    margin-top: 5px;
+    margin: 5px 0;
     font-size: 14px;
     font-weight: 400;
-    margin-left: 5px;
 }
-.card-heber{
+/***.card-heber{
     height: 200px;
     position: relative;
-}
-.card-heber img{
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-}
+}***/
 
 .etoiles{
     position: absolute;
     bottom: 5px;
-    margin-left: 5px;
 }
 .fa-star{
     font-size: 12px;
@@ -277,7 +286,7 @@ input::placeholder {
 }
 
 .populaire{
-    width: 22%;
+    width: 32%;
     padding: 2px 38px;
     border-radius: 20px;
     background: #F2F2F2;
@@ -296,7 +305,7 @@ input::placeholder {
 }
 .card-pop{
     width: 100%;
-    height: 150px;
+    height: 158px;
     display: flex;
     margin-top: 20px;
 }
@@ -393,6 +402,10 @@ figcaption{
     /*************Tablette**********/
 
         @media screen and (max-width: 991px) {
+            /************main*****************/
+            main{
+               
+            }
 
             /*******partie recherche**********/
 
@@ -410,7 +423,6 @@ figcaption{
             }
             .options{
                 margin-bottom: 5px;
-                margin-right: 5px;
             }
 
             /*********Partie hébergement*****/
@@ -469,6 +481,7 @@ figcaption{
             .liste-menu{
                 padding: 10px 0;
                 text-align: center;
+                width: 50%;
             }
             .liste-menu:hover{
                 border-top: none;
@@ -478,14 +491,17 @@ figcaption{
 
              /*******partie recherche**********/
              .group-recherche{
-                width: 85%;
-                margin: auto;
+                width: 100%;
+                padding-right: 20px;
+                padding-left: 20px;
+                margin: 0 auto;
              }
              .boite-recherche{
-                width:95%;
+                width:100%;
             }
             .fa-magnifying-glass{
                 display: block;
+                visibility: visible;
             }
             .recherche{
                 width: 18%;
@@ -499,13 +515,15 @@ figcaption{
                 margin-top: 0;
             }
             .block-option{
+                display: flex;
+                justify-content: space-between;
                 margin-top:15px;
                 width: 100%;
             }
             .options{
-                width: 35%;
+                width: 46%;
                 margin-bottom: 15px;
-                margin-right: 10px;
+               margin-right: 0;
             }
             .options .fa-solid{
                 margin-right: 0;
@@ -520,11 +538,16 @@ figcaption{
             .populaire{
                 order: 1;
                 margin: 0;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 0;
             }
             .heber-ville{
                 width: 100%;
                 order: 2;
                 background: white;
+                padding-right: 20px;
+                padding-left: 20px;
             }
             .hotel-pop{
                 display: flex;
@@ -540,9 +563,14 @@ figcaption{
             .produits-heber a{
                 width: 100%;
             }
+            .plus{
+                visibility: hidden;
+            }
             /********partie activité**********/
             .activite{
-              width: 85%;
+              width: 100%;
+              padding-right: 20px;
+              padding-left: 20px;
               margin: auto;
             }
             .activite h2{
@@ -570,11 +598,12 @@ figcaption{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                padding: 0;
+                padding-left: 0;
+                padding-bottom: 30px;
             }
             .menu-footer{
                 width: 100%;
-                margin: 30px;
+                margin: 0 30px;
             }
             .listes-footer{
                 margin-bottom: 0;
