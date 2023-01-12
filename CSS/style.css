@@ -111,8 +111,10 @@ input::placeholder {
     background-color: #0065FC;
 }
 .fa-magnifying-glass{
-    display: none;
     visibility: hidden;
+}
+#loupe{
+    display: none;  
 }
 
 /*********Partie filtre*************/
@@ -402,16 +404,6 @@ figcaption{
     /*************Tablette**********/
 
         @media screen and (max-width: 991px) {
-            /************main*****************/
-            main{
-               
-            }
-
-            /*******partie recherche**********/
-
-            .fa-magnifying-glass{
-                display: none;
-            }
 
             /*******partie filtre************/
             .filtre{
@@ -490,18 +482,20 @@ figcaption{
             }
 
              /*******partie recherche**********/
-             .group-recherche{
+            .group-recherche{
                 width: 100%;
                 padding-right: 20px;
                 padding-left: 20px;
                 margin: 0 auto;
-             }
-             .boite-recherche{
+            }
+            .boite-recherche{
                 width:100%;
             }
             .fa-magnifying-glass{
-                display: block;
                 visibility: visible;
+            }
+            #loupe{
+                display: block;  
             }
             .recherche{
                 width: 18%;
